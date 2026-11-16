@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  dev.roither.belegablage.gschema.xml — GSettings schema for the
+  Beleg-Ablage GnuCash module.
+
+  Copyright (C) 2026 Georg Roither, roither.dev e.U.
+  License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl-2.0.html>
+  This is free software: you are free to change and redistribute it.
+  There is NO WARRANTY, to the extent permitted by law.
+
+  Install (per user):
+    glib-compile-schemas ~/.local/share/glib-2.0/schemas/   (Linux)
+    or set GSETTINGS_SCHEMA_DIR to the directory containing the
+    compiled binary schema.
+
+  Set the archive root:
+    gsettings set dev.roither.belegablage belege-root '/home/georg/belege-archiv'
+-->
+<schemalist>
+  <schema id="dev.roither.belegablage"
+          path="/dev/roither/belegablage/"
+          gettext-domain="beleg-ablage">
+    <key name="belege-root" type="s">
+      <default>""</default>
+      <summary>Belegarchiv-Stammverzeichnis</summary>
+      <description>
+        Absolute path to the root of the receipt archive. Transaction
+        documents live below it as belege/&lt;YYYY-MM&gt;/B&lt;YYMM&gt;-&lt;Nr&gt;_&lt;Kurzname&gt;.pdf.
+        When empty, the module falls back to the GnuCash document-link
+        path head (Edit → Preferences → Business/Documents).
+      </description>
+    </key>
+  </schema>
+</schemalist>

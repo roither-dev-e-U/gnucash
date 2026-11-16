@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  beleg-ablage.gresource.xml — resource bundle for the Beleg-Ablage plugin.
+
+  Copyright (C) 2026 Georg Roither, roither.dev e.U.
+  License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl-2.0.html>
+  This is free software: you are free to change and redistribute it.
+  There is NO WARRANTY, to the extent permitted by law.
+
+  GnuCash loads plugin UI files only from its own resource bundle at the
+  hard-coded prefix /org/gnucash/GnuCash, so this bundle must reuse exactly
+  that prefix (see GncMainWindow's use of GNUCASH_RESOURCE_PREFIX).
+-->
+<gresources>
+  <gresource prefix="/org/gnucash/GnuCash">
+    <file alias="gnc-plugin-beleg-ablage.ui">gnc-plugin-beleg-ablage.ui</file>
+  </gresource>
+</gresources>

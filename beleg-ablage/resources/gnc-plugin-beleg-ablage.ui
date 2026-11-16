@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  gnc-plugin-beleg-ablage.ui — menu entries for the Beleg-Ablage plugin.
+
+  Copyright (C) 2026 Georg Roither, roither.dev e.U.
+  License GPLv2+: GNU GPL version 2 or later <http://gnu.org/licenses/gpl-2.0.html>
+  This is free software: you are free to change and redistribute it.
+  There is NO WARRANTY, to the extent permitted by law.
+
+  NOTE (Stage 2 / i18n): GnuCash loads its menu GtkBuilders with the
+  "gnucash" text domain, so "translatable" strings here would not pick
+  up our own catalog. The labels are therefore plain German literals
+  for v1; making this translatable via the in-tree gettext setup is an
+  explicit Stage 2 task.
+-->
+<interface>
+  <menu id="ToolsPlaceholder0">
+    <item>
+      <attribute name="label">Beleg _zuordnen…</attribute>
+      <attribute name="action">gnc-plugin-beleg-ablage-actions.BelegAssignAction</attribute>
+    </item>
+    <item>
+      <attribute name="label">Beleg _öffnen</attribute>
+      <attribute name="action">gnc-plugin-beleg-ablage-actions.BelegOpenAction</attribute>
+    </item>
+    <item>
+      <attribute name="label">Beleg-_Info…</attribute>
+      <attribute name="action">gnc-plugin-beleg-ablage-actions.BelegInfoAction</attribute>
+    </item>
+  </menu>
+</interface>
